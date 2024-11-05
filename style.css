@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f8ff; /* Warna background yang lebih cerah */
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient yang lebih ceria */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Bubblegum Sans', cursive;
+    color: white;
+    font-size: 2.5em;
+}
+
+header p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: #f8f9fa;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffe135;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'Bubblegum Sans', cursive;
+    color: #ff6392;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ff9a9e;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 4px solid #ff9a9e;
+    margin-right: 20px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    padding: 10px 0;
+    font-size: 1.2em;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    background: #ffefef;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

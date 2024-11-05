@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Geugeu Alphiana Melajani XI-Oracle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ffafcc, #ff6493, #ff0040);
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Bubblegum Sans', cursive;
+            color: #fff;
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.3em;
+            color: #fefefe;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffd700;
+            font-size: 1.1em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #FFFFFF;
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1000px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-family: 'Bubblegum Sans', cursive;
+            color: #ff6493;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .about-content img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            border: 4px solid #ff6493;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .about-content img:hover {
+            transform: scale(1.05);
+        }
+
+        .about-content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
+            max-width: 600px;
+        }
+
+        #skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 0;
+            list-style: none;
+        }
+
+        #skills li {
+            background: #ffe4e9;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        #skills li:hover {
+            background: #ff6493;
+            color: #fff;
+            transform: translateY(-5px);
+        }
+
+        #skills i {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-item {
+            background: #ffe4e9;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-item h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .project-item p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        #contact {
+            text-align: center;
+            background-color: #FFFACD;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 99, 71, 0.5);
+        }
+
+        #contact a {
+            color: #ff6493;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #ffafcc, #ff6493, #ff0040);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Geugeu Alphiana Melajani</h1>
+        <p>Developer | Game Designer | Programmer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <div class="about-content">
+            <img src="gambarsaya2.jpg" alt="Geugeu Alphiana" class="profile-img">
+            <p>
+                Perkenalkan nama saya Geugeu Alphiana Melajani dari kelas XI-Oracle. Dari kecil, saya senang mendesain dan bermain game. Cita-cita saya adalah menjadi game developer. Sebelumnya, saya kurang tertarik dalam pengembangan perangkat lunak dan gim, tetapi sejak teknologi semakin berkembang, ketertarikan saya pada dunia IT pun mulai tumbuh.
+                <br><br>
+                Saya adalah seorang developer dengan pengalaman dalam pengembangan aplikasi dan game. Saya memiliki keterampilan dalam HTML, CSS, JavaScript, PHP, MySQL, React Native, dan Phaser 3. Sejak kecil, saya memiliki ketertarikan dalam dunia teknologi dan game.
+                <br><br>
+                Selain mengembangkan proyek, saya juga suka belajar hal baru dan mengikuti perkembangan teknologi terbaru. Saya percaya bahwa inovasi adalah kunci untuk menciptakan solusi yang menarik dan bermanfaat. Saya berusaha untuk terus meningkatkan keterampilan saya dan berkontribusi dalam proyek yang berdampak positif.
+            </p>
+        </div>
+    </section>
+    
+    
+    
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><i class="fas fa-code"></i> HTML, CSS, JavaScript</li>
+            <li><i class="fas fa-mobile-alt"></i> React Native</li>
+            <li><i class="fas fa-database"></i> PHP & MySQL</li>
+            <li><i class="fas fa-gamepad"></i> Phaser 3 Game Framework</li>
+            <li><i class="fas fa-game"></i> Pengembangan Game 2D</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Proyek</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Game Platformer</h3>
+                <p>Sebuah game platformer yang dibuat menggunakan Phaser 3 dengan sistem level progresif dan koleksi koin.</p>
+            </div>
+            <div class="project-item">
+                <h3>Aplikasi Absen Siswa</h3>
+                <p>Aplikasi absen siswa berbasis React Native yang dilengkapi dengan CRUD data siswa dan presensi.</p>
+            </div>
+            <div class="project-item">
+                <h3>Scroll Shooter Game</h3>
+                <p>Sebuah game shooter dengan elemen background scrolling dan kendali pesawat menggunakan tombol panah.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Email: <a href="mailto:geugeu.alphiana@example.com">geugeu.alphiana@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/geugeu-alphiana" target="_blank">Geugeu Alphiana</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Geugeu Alphiana Melajani XI-Oracle</p>
+    </footer>
+</body>
+</html>
